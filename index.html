@@ -5,28 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prajkta Khebudkar - Data Science Professional</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Lato', sans-serif;
+            background-color: #FFEDFA;
+            color: #FFB8E0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #EC7FA9;
+        }
+        .accent {
+            color: #BE5985;
+        }
+        .bg-accent {
+            background-color: #BE5985;
+        }
+        .bg-primary {
+            background-color: #EC7FA9;
+        }
+        .bg-secondary {
+            background-color: #FFB8E0;
+        }
+        .bg-light {
+            background-color: #FFEDFA;
         }
     </style>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white py-6">
+<body>
+    <header class="bg-primary text-white py-6">
         <div class="container mx-auto px-4">
-            <h1 class="text-4xl font-bold">Prajkta Khebudkar</h1>
-            <p class="text-xl">Data Science Professional | Python Developer | Analytics Specialist</p>
+            <h1 class="text-4xl font-bold" style="color: #BE5985;">Prajkta Khebudkar</h1>
+            <p class="text-xl text-white">Data Science Professional | Python Developer | Analytics Specialist</p>
         </div>
     </header>
 
-    <nav class="bg-blue-500 py-4">
+    <nav class="bg-accent py-4">
         <div class="container mx-auto px-4">
-            <ul class="flex space-x-6">
-                <li><a href="#home" class="hover:text-blue-200">Home</a></li>
-                <li><a href="#about" class="hover:text-blue-200">About</a></li>
-                <li><a href="#skills" class="hover:text-blue-200">Skills</a></li>
-                <li><a href="#projects" class="hover:text-blue-200">Projects</a></li>
-                <li><a href="#contact" class="hover:text-blue-200">Contact</a></li>
+            <ul class="flex space-x-6 text-white">
+                <li><a href="#home" class="hover:text-pink-200">Home</a></li>
+                <li><a href="#about" class="hover:text-pink-200">About</a></li>
+                <li><a href="#skills" class="hover:text-pink-200">Skills</a></li>
+                <li><a href="#projects" class="hover:text-pink-200">Projects</a></li>
+                <li><a href="#contact" class="hover:text-pink-200">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -34,7 +56,15 @@
     <main class="container mx-auto my-8 px-4">
         <section id="home" class="bg-white p-6 rounded-lg shadow-md mb-6">
             <h2 class="text-3xl font-semibold mb-4">Welcome</h2>
-            <p class="text-gray-700">Data Science professional with expertise in Python, SQL, and data analytics. Passionate about transforming complex data into actionable insights and driving strategic decision-making.</p>
+            <p class="text-gray-700 mb-3">
+                🔹 <strong class="accent">Data Science & Analytics Enthusiast</strong> with a knack for storytelling through data.
+            </p>
+            <p class="text-gray-700 mb-3">
+                🔹 Passionate about <strong class="accent">unraveling complex datasets</strong> and uncovering game-changing insights.
+            </p>
+            <p class="text-gray-700">
+                🔹 Thrives at the <strong class="accent">intersection of data, strategy, and innovation</strong> to drive impactful decision-making.
+            </p>
         </section>
 
         <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -42,12 +72,12 @@
             <div class="grid md:grid-cols-2 gap-4">
                 <div>
                     <h3 class="font-bold text-xl mb-2">Education</h3>
-                    <p class="mb-2">
-                        <strong>D.Y. Patil College of Engineering & Technology</strong><br>
+                    <p class="mb-2 text-gray-700">
+                        <strong class="accent">D.Y. Patil College of Engineering & Technology</strong><br>
                         B.E. Electronics (1st Class)
                     </p>
-                    <p class="mb-2">
-                        <strong>Certifications:</strong><br>
+                    <p class="mb-2 text-gray-700">
+                        <strong class="accent">Certifications:</strong><br>
                         - Data Science & Business Analytics (Simplilearn)<br>
                         - IBM Certification - Python for Data Science<br>
                         - Six Sigma Yellow Belt
@@ -55,12 +85,37 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-xl mb-2">Contact Information</h3>
-                    <p>
-                        <strong>Location:</strong> Pune, Maharashtra<br>
-                        <strong>Email:</strong> prajktak@outlook.com<br>
-                        <strong>Phone:</strong> 84848-33191<br>
-                        <strong>Languages:</strong> English, Marathi, Hindi
+                    <p class="text-gray-700">
+                        <strong class="accent">Email:</strong> prajktak@outlook.com<br>
+                        <strong class="accent">Phone:</strong> 84848-33191<br>
+                        <strong class="accent">Languages:</strong> English, Marathi, Hindi
                     </p>
+                </div>
+            </div>
+            <div class="mt-6">
+                <h3 class="font-bold text-xl mb-2">Personal</h3>
+                <p class="text-gray-700 mb-4">
+                    "I have a bold and unconventional way of thinking, often leaning toward progressive and transformative ideas. While my views can be strong, I truly enjoy understanding different perspectives and engaging in thought-provoking discussions that challenge the norm!"
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="font-bold mb-2 accent">Hobbies</h4>
+                        <ul class="list-disc pl-5 text-gray-700">
+                            <li>Watching football</li>
+                            <li>Exploring new technologies</li>
+                            <li>Reading various genres</li>
+                            <li>Creating written works (poetry, short stories, articles on social issues, human rights, & empowering women)</li>
+                            <li>Tidying up & organizing</li>
+                            <li>Harry Potter</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2 accent">Fun Facts</h4>
+                        <p class="text-gray-700 mb-2"><strong>If I could master any new skill:</strong> Learning new languages so I can read books from different cultures</p>
+                        <p class="text-gray-700 mb-2"><strong>Top 3 shows I could rewatch forever:</strong> Friends, The Big Bang Theory, Brooklyn 99</p>
+                        <p class="text-gray-700 mb-2"><strong>Favorite books:</strong> Harry Potter and The Clifton Chronicles</p>
+                        <p class="text-gray-700"><strong>Comfort food:</strong> Butter noodles, 1 pot pasta, Aloo paratha</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,7 +125,7 @@
             <div class="grid md:grid-cols-3 gap-4">
                 <div>
                     <h3 class="font-bold text-xl mb-2">Languages</h3>
-                    <ul class="list-disc pl-5">
+                    <ul class="list-disc pl-5 text-gray-700">
                         <li>Python (OOP, Data Analysis)</li>
                         <li>SQL (Database Management)</li>
                         <li>R (Statistical Analysis)</li>
@@ -78,7 +133,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-xl mb-2">Tools</h3>
-                    <ul class="list-disc pl-5">
+                    <ul class="list-disc pl-5 text-gray-700">
                         <li>Tableau (Dashboard Creation)</li>
                         <li>Power BI (Interactive Reports)</li>
                         <li>Jupyter Notebook</li>
@@ -86,7 +141,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-xl mb-2">Technologies</h3>
-                    <ul class="list-disc pl-5">
+                    <ul class="list-disc pl-5 text-gray-700">
                         <li>Pandas, NumPy</li>
                         <li>Scikit-Learn</li>
                         <li>Matplotlib & Seaborn</li>
@@ -96,19 +151,61 @@
         </section>
 
         <section id="projects" class="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 class="text-3xl font-semibold mb-4">Key Projects</h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-blue-100 p-4 rounded">
-                    <h3 class="font-bold text-xl mb-2">Crime Analysis Dashboard</h3>
-                    <p>Developed an interactive Tableau dashboard to visualize city crime statistics, enabling strategic planning for police departments.</p>
+            <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-light p-4 rounded border border-secondary">
+                    <h3 class="font-bold text-xl mb-2">📊 Marketing Campaigns Analytics</h3>
+                    <p class="text-gray-700 mb-2">
+                        🔹 Designed an <strong class="accent">end-to-end data-driven solution</strong> for analyzing marketing effectiveness using <strong class="accent">SQL and Python</strong>. 
+                        🔹 Extracted key insights that <strong class="accent">led to a 20% boost in customer engagement</strong> by identifying high-performing marketing strategies.
+                    </p>
+                    <p class="text-gray-700">
+                        <em>Technologies: Python, Pandas, Scikit-learn</em>
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        • Performed <strong class="accent">Exploratory Data Analysis (EDA)</strong> to measure the effectiveness of marketing strategies.<br>
+                        • Used <strong class="accent">feature engineering & encoding techniques</strong> to prepare data for machine learning.<br>
+                        • Conducted <strong class="accent">statistical analysis & hypothesis testing</strong> to identify key customer behaviors.<br>
+                        • Built <strong class="accent">visualizations (heat maps, box plots, etc.)</strong> to highlight trends and correlations.
+                    </p>
                 </div>
-                <div class="bg-blue-100 p-4 rounded">
-                    <h3 class="font-bold text-xl mb-2">Marketing Campaigns Analysis</h3>
-                    <p>Conducted comprehensive EDA using Python and pandas, leading to a 20% enhancement in customer acquisition strategies.</p>
+                <div class="bg-light p-4 rounded border border-secondary">
+                    <h3 class="font-bold text-xl mb-2">⚽ Premier League Data Analysis</h3>
+                    <p class="text-gray-700">
+                        🔹 Engineered a <strong class="accent">web scraping pipeline</strong> to collect and analyze <strong class="accent">football statistics</strong> from match data. 
+                        🔹 Built <strong class="accent">predictive models and interactive dashboards</strong> to analyze match outcomes and <strong class="accent">team performance insights</strong>.
+                    </p>
                 </div>
-                <div class="bg-blue-100 p-4 rounded">
-                    <h3 class="font-bold text-xl mb-2">Online Car Rental Platform</h3>
-                    <p>Built a robust Python-based car rental system with OOP principles, featuring real-time inventory management and automated billing.</p>
+                <div class="bg-light p-4 rounded border border-secondary">
+                    <h3 class="font-bold text-xl mb-2">🤖 Automated WhatsApp Order System</h3>
+                    <p class="text-gray-700">
+                        🔹 Developed a <strong class="accent">Flask-based automation system</strong> for WhatsApp order processing. 
+                        🔹 Integrated <strong class="accent">real-time stock management</strong> and automated customer interactions for a seamless ordering experience.
+                    </p>
+                </div>
+                <div class="bg-light p-4 rounded border border-secondary">
+                    <h3 class="font-bold text-xl mb-2">🔍 Crime Analysis Dashboard</h3>
+                    <p class="text-gray-700">
+                        • Created an <strong class="accent">interactive Tableau dashboard</strong> to help police departments analyze crime trends.<br>
+                        • Analyzed crime incidents <strong class="accent">by time, location, and type</strong>, revealing key patterns.<br>
+                        • Used <strong class="accent">SQL</strong> for data preprocessing and feature engineering (e.g., breaking down DateTime fields).<br>
+                        • Built <strong class="accent">dynamic filters & parameters</strong> for in-depth data exploration.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        <em>Technologies: Tableau & SQL</em>
+                    </p>
+                </div>
+                <div class="bg-light p-4 rounded border border-secondary">
+                    <h3 class="font-bold text-xl mb-2">🚗 Online Car Rental Platform</h3>
+                    <p class="text-gray-700">
+                        • Developed a <strong class="accent">Python-based rental system</strong> with hourly, daily, and weekly options.<br>
+                        • Built an <strong class="accent">inventory management system</strong> for real-time updates on available cars.<br>
+                        • Automated billing using <strong class="accent">DateTime</strong> to calculate rental costs accurately.<br>
+                        • Designed a <strong class="accent">customer interaction module</strong> for easy car booking and return.
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                        <em>Technologies: Python, OOP</em>
+                    </p>
                 </div>
             </div>
         </section>
@@ -119,12 +216,12 @@
                 <input type="text" placeholder="Your Name" class="w-full p-2 border rounded">
                 <input type="email" placeholder="Your Email" class="w-full p-2 border rounded">
                 <textarea placeholder="Your Message" class="w-full p-2 border rounded" rows="4"></textarea>
-                <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Send Message</button>
+                <button class="bg-accent text-white py-2 px-4 rounded hover:bg-primary transition duration-300">Send Message</button>
             </form>
         </section>
     </main>
 
-    <footer class="bg-blue-600 text-white py-4">
+    <footer class="bg-primary text-white py-4">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2024 Prajkta Khebudkar. All Rights Reserved.</p>
         </div>
