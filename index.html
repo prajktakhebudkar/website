@@ -72,9 +72,17 @@
             <p class="text-gray-700 mb-3">
                 🔹 Passionate about <strong class="accent">unraveling complex datasets</strong> and uncovering game-changing insights.
             </p>
-            <p class="text-gray-700">
+            <p class="text-gray-700 mb-3">
                 🔹 Thrives at the <strong class="accent">intersection of data, strategy, and innovation</strong> to drive impactful decision-making.
             </p>
+            <div class="mt-4 text-center">
+                <a href="Prajkta_Khebudkar_Resume.pdf" download class="bg-accent text-white py-2 px-6 rounded-full hover:bg-primary transition duration-300 inline-flex items-center">
+                    <span>Download Resume</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                </a>
+            </div>
         </section>
 
         <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-6">
@@ -215,15 +223,20 @@
             </div>
         </section>
 
-      <section id="contact" class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
-    <form action="https://formspree.io/f/prajktak@outlook.com" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded" required style="color: #BE5985;">
-        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" required style="color: #BE5985;">
-        <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded" rows="4" required style="color: #BE5985;"></textarea>
-        <button type="submit" class="bg-accent text-white py-2 px-4 rounded hover:bg-primary transition duration-300">Send Message</button>
-    </form>
-</section>
+        <section id="contact" class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+            <p class="text-gray-700 mb-4">
+                Feel free to reach out to me via email at <a href="mailto:prajktak@outlook.com" class="accent hover:underline">prajktak@outlook.com</a>
+            </p>
+            <div class="mt-6">
+                <a href="Prajkta_Khebudkar_Resume.pdf" download class="bg-accent text-white py-2 px-6 rounded-full hover:bg-primary transition duration-300 inline-flex items-center">
+                    <span>Download My Resume</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-primary text-white py-4">
@@ -231,22 +244,5 @@
             <p>&copy; 2024 Prajkta Khebudkar. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Simple form validation (client-side)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = this.querySelector('input[type="text"]').value;
-            const email = this.querySelector('input[type="email"]').value;
-            const message = this.querySelector('textarea').value;
-
-            if (name && email && message) {
-                alert('Message sent successfully!');
-                this.reset();
-            } else {
-                alert('Please fill in all fields.');
-            }
-        });
-    </script>
 </body>
 </html>
