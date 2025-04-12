@@ -35,6 +35,40 @@
         .bg-light {
             background-color: #FFEDFA;
         }
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -165,8 +199,7 @@
                         • <strong class="accent">Performed Exploratory Data Analysis (EDA)</strong> to uncover trends in player performance, team statistics, and match outcomes.<br>
                         • <strong class="accent">Built predictive models</strong> to analyze match results and player efficiency using statistical and machine learning techniques.<br>
                         • <strong class="accent">Created interactive dashboards</strong> in <strong class="accent">Power BI</strong> for visualizing key performance metrics like goals, assists, and possession.<br>
-                        • <strong class="accent">Derived insights for strategic decision-making</strong>, helping in performance evaluation, player scouting, and game tactics.<br>
-                        • <strong class="accent">Explored future improvements</strong>, such as integrating real-time match data and expanding analysis to other leagues.
+                        • Visualization can be seen <a href="#" class="accent hover:underline" onclick="openModal();return false;">here</a> in image format and <a href="PBI Dashboard.pbix" download class="accent hover:underline">here</a> you can download the pbix file.
                     </p>
                 </div>
                 <div class="bg-light p-4 rounded border border-secondary">
@@ -244,5 +277,30 @@
             <p>&copy; 2024 Prajkta Khebudkar. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- The Modal for the Dashboard Image -->
+    <div id="dashboardModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="dashboardImg" src="Power BI Dashboard.png" alt="Premier League Power BI Dashboard">
+    </div>
+
+    <script>
+        // Modal functions
+        function openModal() {
+            document.getElementById("dashboardModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("dashboardModal").style.display = "none";
+        }
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById("dashboardModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
